@@ -30,3 +30,14 @@ makeBlue.addEventListener('click', function () {
 document.getElementById('coral').addEventListener('click', function () {
     document.body.style.backgroundColor = 'coral';
 })
+
+//section 2 on click paragraph
+function paragraph() {
+    document.getElementById("para").innerText="This is made With JS";
+}
+
+document.getElementById("updateName").addEventListener('click', function (){
+    const inputValue = document.getElementById("name1");
+    document.getElementById("para2").innerText = inputValue.value;
+    inputValue.value = '';
+})
